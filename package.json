@@ -1,0 +1,16 @@
+{
+  "name": "closure-namespace-externs",
+  "version": "1.0.0",
+  "description": "Reproducer for closure compiler bug with --rename_prefix_namespace and externs.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run test",
+    "build": "node index.mjs",
+    "test": "node test.mjs"
+  },
+  "author": "gernot.raudner@dynatrace.com",
+  "license": "ISC",
+  "dependencies": {
+    "google-closure-compiler": "20240317.0.0"
+  }
+}

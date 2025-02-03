@@ -1,0 +1,1 @@
+(function(){TEST_NAMESPACE.d=function(b){let c=b;const f=100*Math.random();for(let a=0;a<f;a++)c=b+a*Math.random();return c+"_lib"};var e;(e=globalThis).TEST_NAMESPACE??(e.TEST_NAMESPACE={});console.log(TEST_NAMESPACE.d("module-a"));globalThis.TEST_NAMESPACE.notObfuscated=()=>console.log("not obfuscated fn executed successfully");})();
