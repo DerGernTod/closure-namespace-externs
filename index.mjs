@@ -2,11 +2,8 @@ import closure from "google-closure-compiler";
 
 const flags = [
     "--compilation_level", "ADVANCED_OPTIMIZATIONS",
-    "--language_in", "ECMASCRIPT_2021",
-    "--language_out", "ECMASCRIPT_2021",
-    "--rewrite_polyfills", "false",
     "--rename_prefix_namespace", "TEST_NAMESPACE",
-    "--assume_function_wrapper", "--source_map_include_content",
+    "--assume_function_wrapper",
     "--externs", "externs.js",
     "--chunk_output_path_prefix", "./dist/",
     "--chunk", "module-a:2",
@@ -15,7 +12,8 @@ const flags = [
     "--js", "./source/module-a.js",
     "--chunk", "module-b:1:module-a",
     "--chunk_wrapper", "module-b:(function(){%output%})();",
-    "--js", "./source/module-b.js"];
+    "--js", "./source/module-b.js"
+];
 
 const compilerInstance = new closure.compiler(flags);
 

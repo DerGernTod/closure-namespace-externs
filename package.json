@@ -8,6 +8,9 @@
     "build": "node index.mjs",
     "test": "node test.mjs"
   },
+  "engines": {
+    "node": "22"
+  },
   "author": "gernot.raudner@dynatrace.com",
   "license": "ISC",
   "dependencies": {
